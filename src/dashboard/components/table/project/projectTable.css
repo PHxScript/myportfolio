@@ -1,0 +1,109 @@
+.dashboard_projectTable-container {
+    margin: 1rem;
+}
+
+.dashboard_projectTable-searchInput-content input {
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--color-text-outerSpace);
+  border: 1px solid var(--color-bg-platinum);
+  outline: none;
+}
+
+
+.dashboard_projectTable-pagination-content {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-text-outerSpace);
+}
+.dashboard_projectTable-pagination-content button {
+  padding: 0.5rem;
+  border: 1px solid var(--color-bg-platinum);
+  outline: none;
+  cursor: pointer;
+}
+.dashboard_projectTable-pagination-content button:hover {
+  opacity: 0.75;
+}
+
+
+
+.dashboard_projectTable {
+  margin-top: 2rem;
+}
+
+.striped-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.striped-table th, .striped-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.striped-table th {
+  padding: 1rem 0.5rem;
+  color: var(--color-text-outerSpace);
+  background: var(--color-bg-platinum);
+  /* color: var(--color-text-outerSpace);
+  background-color: #f2f2f2; */
+}
+
+.striped-table tbody tr:nth-child(even) {
+  background-color: #fcfcfc;
+  /* background-color: #f2f2f2; */
+}
+
+
+
+
+
+
+.dashboard_projectTable-pagination-content {
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}   
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .dashboard_projectTable-searchInput-content input {
+      width: 30%;
+    }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .dashboard_projectTable-searchInput-content input {
+      width: 60%;
+    }
+    .striped-table-content {
+      max-width: 100%;
+      padding-bottom: 1rem;
+      overflow-x: scroll;
+    }
+    .dashboard_projectTable-pagination-content {
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+  }
+  

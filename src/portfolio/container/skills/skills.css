@@ -1,0 +1,197 @@
+.skills_container {
+    width: 100%;
+    background: var(--color-bg-platinum);
+    /* background: var(--color-text-outerSpace); */
+    overflow: hidden;
+}
+.skills_content {
+    width: 100%;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills {
+    width: 100%;
+}
+.skills_heading-title-content {
+    text-align: center;
+    color: var(--color-text-outerSpace)
+}
+.skills_heading-title-content span {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--color-text-outerSpace);
+}
+
+
+
+
+
+
+.skills_technical-soft-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.skills_technical-soft-content {
+    margin-top: 5%;
+    gap: 4rem;
+}
+
+.skills_technical-content h3,
+.skills_soft-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+
+.skills_technical,
+.skills_web-development, 
+.skills_database-management {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 2rem 2rem 2rem 4rem;
+    color: var(--color-text-outerSpace);
+    background: var(--color-bg);
+}
+
+.skills_icon-content {
+    position: absolute;
+    top: 50%;
+    /* left: 0; */
+    transform: translateY(-50%);
+    left: -2.5rem;
+    padding: 1rem 1.5rem;
+    /* border: 1px solid var(--color-text-outerSpace); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 50%;
+    background: var(--color-bg);
+}
+.skills_icon-content .icon {
+    color: var(--color-text-outerSpace);
+    font-size: 1.5rem;
+}
+
+
+.skills_technical {
+    border-left: 5px solid #00D8FF;
+}
+.skills_web-development {
+    border-left: 5px solid #008080;
+}
+.skills_database-management {
+    border-left: 5px solid #eed202;
+}
+
+.skills_problemSolving-content {
+    border-left: 5px solid #228b22;
+}
+.skills_adaptability-content {
+    border-left: 5px solid #00b7eb;
+}
+.skills_teamCollaboration-content {
+    border-left: 5px solid #b57edc;
+}
+
+
+
+.skills_icon-content .icon_react {
+    color:#00D8FF;
+}
+.skills_icon-content .icon_webDev {
+    color: #008080;
+}
+.skills_icon-content .icon_database {
+    color: #eed202;
+}
+
+.skills_icon-content .icon_problem-solving {
+    color: #228b22;
+}
+.skills_icon-content .icon_adaptability {
+    color: #00b7eb;
+}
+.skills_icon-content .icon_team-collaboration {
+    color: #b57edc;
+}
+
+
+
+
+
+.skills_problemSolving-content,
+.skills_adaptability-content,
+.skills_teamCollaboration-content {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 2rem 2rem 2rem 4rem;
+    color: var(--color-text-outerSpace);
+    background: var(--color-bg);
+}
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .skills_content {
+        /* padding: 2rem 3rem; */
+        padding: 4rem 3rem 2rem 3rem;
+    }
+    .skills {
+        width: 85%;
+    }
+   
+}
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .skills_content {
+        padding: 4rem 2rem;
+    }
+    .skills {
+        width: 95%;
+    }
+    .skills_technical-soft-content {
+        margin-top: 10%;
+    }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .skills_content {
+        padding: 6rem 1.5rem;
+        /* padding: 4rem 1.5rem 2rem 1.5rem; */
+    }
+    .skills {
+        width: 90%;
+    }
+    .skills_technical-soft-content {
+        flex-direction: column;
+        margin-top: 10%;
+        gap: 2rem;
+    }
+
+
+    /* .skills_technical,
+    .skills_web-development, 
+    .skills_database-management,
+    .skills_problemSolving-content,
+    .skills_adaptability-content,
+    .skills_teamCollaboration-content {
+        padding: 2rem 2rem 2rem 3rem;
+    } */
+  }
+  

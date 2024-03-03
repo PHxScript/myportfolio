@@ -1,0 +1,87 @@
+.dashboard_card-content {
+    padding: 1rem;
+    border-radius: 5px;
+    background: var(--color-lightBlue);
+}
+.dashboard_card-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard_card-title {
+    text-align: center;
+}
+.dashboard_card-data h2,
+.dashboard_card-data p {
+    color: var(--color-text-outerSpace);
+}
+.dashboard_card-data .icon {
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    background: var(--color-deepSkyBlue);
+}
+.dashboard_card-data .percentage {
+    padding: 0.25rem;
+    border-radius: 5px;
+    color: var(--color-white);
+    background: var(--color-deepSkyBlue);
+}
+.dashboard_selected-month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dashboard_selected-month a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    color: var(--color-text-outerSpace);
+}
+.dashboard_selected-month a .icon {
+    transition: transform 0.3s ease;
+}
+.dashboard_selected-month a:hover .icon {
+    transform: translateX(5px);
+}
+
+
+
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .dashboard_card-content {
+        padding: 1.5rem;
+    }
+}
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .dashboard_card-content {
+        padding: 1.5rem;
+    }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .dashboard_card-content {
+        padding: 1.5rem;
+    }
+  }
+  

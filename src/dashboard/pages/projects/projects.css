@@ -1,0 +1,259 @@
+.dashboard_projects-container {
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+}
+.dashboard_projects-content {
+    width: 100%;
+    background: #f5f5f5;
+    padding-left: 10rem;
+}
+.dashboard_projects-addBtn-content {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.dashboard_projects-addBtn-content .icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-bg-platinum);
+  border-radius: 50%;
+}
+.dashboard_projects-addBtn-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+}
+.dashboard_projects-addBtn-content button:hover .icon {
+  background: var(--color-white);
+}
+
+
+.dashboard_projects-heading-title-content {
+    padding: 0 1rem 1rem 1rem ;
+    color: var(--color-text-outerSpace);
+    text-align: center;
+}
+.dashboard_projects-heading-title-content span {
+  color: var(--color-deepSkyBlue);
+}
+.dashboard_project-edit-btn {
+  padding: 0.2rem 0.25rem;
+  color: var(--color-white);
+  background: green;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.dashboard_project-delete-btn {
+margin-left: 0.2rem;
+padding: 0.2rem 0.25rem;
+color: var(--color-white);
+background: red;
+border-radius: 5px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.dashboard_project-edit-btn:hover, 
+.dashboard_project-delete-btn:hover {
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.dashboard_projects-table-totalCount-content {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  line-height: 2rem;
+  color: var(--color-text-outerSpace);
+  background: var(--color-bg-platinum);
+}
+
+
+
+.dashboard_projects-table-totalCount {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.dashboard_projects-table-totalCount div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  /* text-align: center; */
+  border-radius: 5px;
+  background: var(--color-bg);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.dashboard_projects-table-totalCount div:hover {
+  background: none;
+}
+.dashboard_projects-table-totalCount button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--color-text-outerSpace);
+}
+.dashboard_projects-table-totalCount h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.dashboard_projects-table-totalCount .icon {
+  font-size: 2rem;
+  padding: 0.2rem;
+  color: var(--color-text-outerSpace);
+  background: var(--color-bg);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+
+
+.modal-heading-title-content {
+  color: var(--color-text-outerSpace);
+}
+.modal-heading-title-content span {
+  color: var(--color-deepSkyBlue);
+}
+.modal_input-form-content .modal_input input,
+.modal_input-form-content .modal_select select {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: var(--color-text-outerSpace);
+  border-bottom: 1px solid var(--color-deepSkyBlue);
+}
+.modal_input-form-content .modal_select select option {
+  font-size: 1.2rem;
+}
+
+.modal-button-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+.modal-button-content button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-button-content .modal_addBtn,
+.modal-button-content .modal_updateBtn {
+  color: var(--color-white);
+  background: var(--color-deepSkyBlue);
+}
+.modal-button-content .modal_closeBtn {
+  color: var(--color-white);
+  background: red;
+}
+
+
+.modal-button-content .modal_addBtn:hover,
+.modal-button-content .modal_updateBtn:hover,
+.modal-button-content .modal_closeBtn:hover {
+  opacity: 0.8;
+}
+
+.modal_delete-content {
+  text-align: center;
+  line-height: 4rem;
+}
+.modal_delete-content h3 {
+  color: var(--color-text-outerSpace);
+}
+.modal_delete-content button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modal_delete-content button:hover {
+  opacity: 0.8;
+}
+.modal_delete-content .modal_confirm-delete {
+  color: var(--color-white);
+  background: red;
+}
+.modal_delete-content .modal_close {
+  color: var(--color-white);
+  background: green;
+}
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  padding: 0.5rem;
+}
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}   
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .dashboard_projects-content  {
+      padding-left: 0;
+      padding-bottom: 2rem;
+  }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .dashboard_projects-container {
+      height: 95vh;
+  }
+    .dashboard_projects-content {
+      padding-left: 0;
+    }
+    .dashboard_projects-heading-title-content h1 {
+      font-size: 1.5rem;
+    }
+    .dashboard_projects-table-totalCount {
+      padding: 0.5rem;
+    }
+    .dashboard_projects-table-totalCount h4 {
+      flex-direction: column;
+    }
+    
+  }
+  

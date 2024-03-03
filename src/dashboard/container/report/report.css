@@ -1,0 +1,239 @@
+.report_container {
+    margin: 1rem;
+}
+
+
+.report {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+    gap: 1rem;
+}
+
+
+
+.report_activity-content {
+    flex: 0.5;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background: var(--color-bg-platinum);
+}
+.loadMore {
+    max-height: 362px;
+    overflow-y: scroll;
+}
+.report_activity-content h5 {
+    color: var(--color-text-outerSpace);
+}
+.report_activity-button-content {
+    text-align: center;
+}
+.report_activity-button-content button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--color-white);
+    background: var(--color-text-outerSpace);
+}
+.report_activity-button-content button:hover {
+    opacity: 0.8;
+}
+
+/* Add these new rules */
+.report_activity-content::-webkit-scrollbar {
+    width: 2px; /* Width of the entire scrollbar */
+}
+
+.report_activity-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+.report_activity-content::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+}
+
+.report_activity-content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
+
+.report_activity-logs-content {
+    border-left: 1px solid var(--color-text-outerSpace);
+    line-height: 1rem;
+}
+
+.report_activity-logs-item-content {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.report_activity-logs-item-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: var(--color-text-outerSpace);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+.report_reviews-content {
+    flex: 1;
+}
+
+.report_success-completed-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap:  1rem;
+}
+
+.report_success-content {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background: var(--color-bg-platinum);
+}
+.report_success-content h2,
+.report_success-content p {
+    color: var(--color-text-outerSpace);
+}
+.report_success-content .icon {
+    font-size: 4rem;
+    color: var(--color-deepSkyBlue);
+}
+.report_success-content button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--color-white);
+    background: var(--color-deepSkyBlue);
+}
+.report_success-content button:hover {
+    opacity: 0.8;
+}
+
+.report_completed-content {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background: var(--color-lightBlue);
+}
+.report_completed-content h1 {
+    margin: 1rem 0;
+    color: var(--color-text-outerSpace);
+}
+.report_completed-content h4 {
+    color: var(--color-text-outerSpace);
+}
+.report_completed-content p {
+    color: var(--color-text-outerSpace);
+}
+.report_completed-content button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--color-white);
+    background: var(--color-deepSkyBlue);
+}
+.report_completed-content button:hover {
+    opacity: 0.8;
+}
+
+
+
+.report_client-reviews-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: var(--color-bg-platinum);
+}
+.report_client-reviews-content h5 {
+    margin-bottom: 1rem;
+    color: var(--color-text-outerSpace);
+}
+.report_client-reviews-content h4,
+.report_client-reviews-content p {
+    color: var(--color-text-outerSpace);
+}
+
+.report_client-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.report_client {
+    display: flex;
+}
+.report_client-content .icon-user {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: var(--color-deepSkyBlue);
+}
+.report_client-content .icon-arrow-right {
+    cursor: pointer;
+    color: var(--color-text-outerSpace);
+}
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}   
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .report {
+        flex-direction: column;
+    }
+    .loadMore {
+        max-height: 320px;
+    }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .report {
+        flex-direction: column;
+    }
+    .report_activity-button-content button {
+        margin-top: 0.5rem;
+    }
+    .loadMore {
+        max-height: 335px;
+    }
+    .report_success-completed-content {
+        flex-direction: column;
+    }
+  }
+  

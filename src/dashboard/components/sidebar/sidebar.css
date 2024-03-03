@@ -1,0 +1,104 @@
+.sidebar_container {
+    width: 160px;
+    height: 100vh;
+    background: var(--color-bg);
+    position: fixed;
+    overflow: hidden;
+    z-index: 98;
+}
+.sidebar_content {
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar_heading-title-content {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+.sidebar_heading-title-content .icon {
+  cursor: pointer;
+}
+
+
+.sidebar_main-content h5 {
+    padding: 0.5rem;
+}
+
+.sidebar_main-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    color: var(--color-text-outerSpace);
+    text-decoration: none;
+    overflow: hidden;
+}
+.sidebar_main-content .active {
+    background: var(--color-bg-platinum);
+}
+
+.sidebar_menu {
+  cursor: pointer;
+}
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+  .sidebar_container .sidebar_menu {
+    display: none;
+  }
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .sidebar_container .sidebar_menu {
+      display: none;
+    }
+}
+  
+/* Styles for tablets */
+  @media screen and (max-width: 991px) {
+    .sidebar_container {
+      width: fit-content;
+      height: fit-content;
+      background:transparent;
+    }
+    .sidebar_container .sidebar_menu {
+      margin: 0.75rem 0 0 0.4rem;
+      font-size: 1.5rem;
+      /* margin: 0.85rem 0.6rem; */
+    }
+    .sidebar_content {
+      width: 0;
+    }
+    .sidebar_main-content {
+      display: none;
+    }
+    .sidebar_main-content .sidebar_heading-title-content {
+      margin-top: 1.25rem;
+    }
+    .sidebar_container .showSidebar   {
+      width: 260px;
+      height: 100vh;
+      margin-top: 0.55rem;
+      transition: width 0.1s ease;
+      background: var(--color-bg-platinum);
+    }
+    .showSidebar .sidebar_main-content {
+      display: block;
+      overflow: hidden;
+    }
+    .showSidebar .sidebar_main-content .active  {
+      background: var(--color-bg);
+      /* background: var(--color-bg-platinum); */
+  }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+
+  }
+  

@@ -1,0 +1,208 @@
+.services_container {
+    width: 100%;
+    background: var(--color-bg);
+}
+.services_content {
+    width: 100%;
+    padding: 6rem 6rem 4rem 6rem;
+}
+.services_heading-title {
+    text-align: center;
+    color: var(--color-text-outerSpace);
+}
+
+.services_heading-title span {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--color-text-outerSpace);
+}
+
+
+.services {
+    width: 100%;
+}
+
+
+
+
+/* .services_what-we-do-content */
+.services_what-we-do-content {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.services_what-we-do-text-content {
+    flex: 1;
+}
+.services_what-we-do-text-content h4 {
+    color: var(--color-deepSkyBlue);
+}
+.services_what-we-do-text-content h1 {
+    color: var(--color-text-outerSpace);
+}
+.services_what-we-do-text-content p {
+    color: var(--color-text-outerSpace);
+    margin: 2% 0 5% 0;
+}
+.services_what-we-do-text-content a {
+    padding: 0.8rem 1rem;
+    color: var(--color-white);
+    background: var(--color-text-outerSpace);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.services_what-we-do-text-content a:hover .services_what-we-do-text-icon {
+    color: var(--color-deepSkyBlue);
+}
+.services_what-we-do-text-icon {
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+}
+/* .services_what-we-do-content */
+
+
+
+
+
+
+/* .services_what-we-do-card-content */
+.services_what-we-do-card-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.services_web-development,
+.services_web-design,
+.services_mobile-development {
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.services_web-development {
+    color: var(--color-text-outerSpace);
+    background: var(--color-lightBlue);
+    /* background: var(--color-deepSkyBlue); */
+}
+.services_web-design {
+    color: var(--color-text-outerSpace);
+    background: var(--color-lightGreen);
+}
+.services_mobile-development {
+    color: var(--color-text-outerSpace);
+    background: var(--color-lightPink);
+}
+
+.services_web-development .services_card-icon,
+.services_web-design .services_card-icon,
+.services_mobile-development .services_card-icon {
+    font-size: 2rem;
+}
+
+.services_web-development h3,
+.services_web-design h3,
+.services_mobile-development h3 {
+    margin: 0.5rem 0;
+}
+/* .services_what-we-do-card-content */
+
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .services_content {
+        padding: 4rem 7rem;
+    }
+    .services_what-we-do-content {
+        flex-direction: column;
+    }
+    .services_what-we-do-text-content {
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .services_web-development,
+    .services_web-design,
+    .services_mobile-development {
+        padding: 3rem;
+    }
+}
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .services_content {
+        padding: 4rem 2rem;
+    }
+    .services_what-we-do-content {
+        gap: 2%;
+        flex-direction: column;
+    }
+    .services_what-we-do-text-content {
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .services_what-we-do-text-content h1 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-top: 0.5rem;
+    }
+ 
+    .services_what-we-do-text-content p {
+        margin: 2% 0 4% 0;
+    }
+    .services_web-development,
+    .services_web-design,
+    .services_mobile-development {
+        padding: 2.5rem;
+    }
+
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .services_content {
+        padding: 6rem 1.5rem;
+        /* padding: 4rem 1.5rem 2rem 1.5rem; */
+    }
+    .services_what-we-do-card-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services_what-we-do-content {
+        margin-top: 10%;
+        flex-direction: column;
+    }
+    .services_what-we-do-text-content {
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    .services_what-we-do-text-content h1 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin: 4% 0;
+    }
+
+    .services_what-we-do-text-content p {
+        margin: 3% 0 10% 0;
+    }
+    .services_web-development,
+    .services_web-design,
+    .services_mobile-development {
+        padding: 3rem;
+    }
+  }
+  

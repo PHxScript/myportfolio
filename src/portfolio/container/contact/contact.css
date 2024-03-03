@@ -1,0 +1,256 @@
+.contact_container {
+    width: 100%;
+    background: var(--color-bg-platinum);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.contact_content {
+    width: 100%;
+    padding: 4rem 6rem; 
+    /* animation: bounce 0.5s infinite alternate;  */
+}
+/* @keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); 
+    }
+} */
+
+.contact_heading-title {
+    color: var(--color-text-outerSpace);
+    text-align: center;
+}
+
+.contact_heading-title span {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--color-text-outerSpace);
+}
+
+.contact_form-content {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+
+/* contact_chat-card-form */
+.contact_chat-card-form {
+    width: 30%;
+    border-radius: 15px;
+    position: relative;
+    background: var(--color-japanese-indigo);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact_chat-card-profile {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-japanese-indigo);
+    border-bottom: 1px solid var(--color-text-outerSpace);
+    border-radius: 20px;
+}
+.contact_chat-card-profile img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+}
+.contact_chat-card-profile .chat_card-profile-name{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--color-white);
+}
+.contact_chat-card-profile .chat_card-profile-number {
+    color: var(--color-deepSkyBlue);
+}
+
+
+.contact_chat-card-location-email-content {
+    margin-top: 0.4rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    background: var(--color-japanese-indigo);
+    border-top: 1px solid var(--color-text-outerSpace);
+    border-radius: 20px;
+}
+.contact_chat-card-location-content,
+.contact_chat-card-email-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 2rem;
+}
+.contact_chat-card-location-content p,
+.contact_chat-card-email-content p {
+    color: var(--color-white);
+}
+.contact_chat-card-location-content .icon,
+.contact_chat-card-email-content .icon{
+    color: var(--color-deepSkyBlue);
+    padding: 0.5rem;
+    font-size: 2rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.contact_chat-card-button-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+.contact_chat-card-button-content button {
+    width: 30%;
+    padding: 0.5rem;
+    color: var(--color-white);
+    background: var(--color-deepSkyBlue);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.contact_chat-card-form-content {
+    width: 100%;
+    height: 0;
+    text-align: center;
+}
+.contact_chat-card-form-content h1 {
+    color: var(--color-text-outerSpace);
+    margin: 1rem 0;
+}
+.contact_chat-card-form-content input,
+.contact_chat-card-form-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: none;
+    color: var(--color-text-outerSpace);
+    border: 1px solid var(--color-text-outerSpace);
+    border-radius: 10px;
+    outline: none;
+}
+.contact_chat-card-form-content button {
+    padding: 0.5rem 1.8rem;
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
+    color: var(--color-white);
+    background: var(--color-text-outerSpace);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.contact_chat-card-form-content button:hover {
+    opacity: 0.95;
+}
+
+
+
+
+
+
+
+.contact_chat-card-arrow-down-content .icon {
+    color: var(--color-japanese-indigo);
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    bottom: -2.3rem;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+.contact_chat-card {
+    display: none;
+}
+.openForm .contact_chat-card {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    border-radius: 12px;
+    overflow: hidden;
+} 
+.contact_chat-card-form-icon-content {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.contact_chat-card-form-icon-content .icon {
+    color: var(--color-text-outerSpace);
+    margin: 0.5rem 0.3rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+}
+/* contact_chat-card-form */
+
+
+
+
+
+
+
+
+
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact_chat-card-form {
+        width: 40%;
+    }
+}
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .contact_content {
+        padding: 4rem 2rem;
+    }
+    .contact_chat-card-form {
+        width: 45%;
+    }
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .contact_content {
+        width: 100%;
+        padding: 6rem 1.5rem 8rem 1.5rem;
+    }
+    .contact_form-content {
+        margin-top: 10%;
+    }
+    .contact_chat-card-form {
+        width: 100%;
+        border-radius: 15px;
+        position: relative;
+    }
+  }
+  

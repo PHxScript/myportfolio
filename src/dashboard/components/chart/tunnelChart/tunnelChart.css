@@ -1,0 +1,35 @@
+.dashboard_sanKeychart-content {
+    width: 99%;
+    height: 350px;
+    padding: 1rem;
+    background: var(--color-bg);
+    border-radius: 5px;
+ }
+ .dashboard_sanKeychart-content h5{
+     color: var(--color-text-outerSpace);
+ }
+
+
+
+
+ /* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}   
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+ 
+  }
+  

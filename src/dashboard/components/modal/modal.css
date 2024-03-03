@@ -1,0 +1,56 @@
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .slide-top{animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both}
+ @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+  
+  .modal {
+    width: 40%;
+    /* width: 50%; */
+    height: fit-content;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+  }
+  
+
+
+
+  
+/* Default styles for all devices */
+/* Styles for large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+  
+/* Styles for smaller desktops and laptops */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}   
+  
+/* Styles for tablets */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .slide-top{animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both}
+    @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-20px)}}
+     
+  }
+
+/* Styles for mobile devices (phones) */
+  @media screen and (max-width: 767px) {
+    .modal {
+        width: 100%;
+      }
+  }
+  
